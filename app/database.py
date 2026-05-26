@@ -4,8 +4,6 @@ from app.config import settings
 
 client = AsyncIOMotorClient(
     settings.mongo_uri,
-    tls=True,
-    tlsAllowInvalidCertificates=True,
     serverSelectionTimeoutMS=5000
 )
 
